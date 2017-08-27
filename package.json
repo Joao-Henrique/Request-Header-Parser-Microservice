@@ -1,0 +1,24 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "BackEnd FreeCodeCamp Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-Henrique/Request-Header-Parser-Microservice.git"
+  },
+  "author": "João Henrique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Joao-Henrique/Request-Header-Parser-Microservice/issues"
+  },
+  "homepage": "https://github.com/Joao-Henrique/Request-Header-Parser-Microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4"
+  }
+}
