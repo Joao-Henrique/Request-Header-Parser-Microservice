@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>FCC API-HeaderParser</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>API Request Header Parser Microservice</h1>
+    </div>
+    <div class="container userStoryBox">
+      <h3> User Storie:</h3>
+      <h4>1) I can get the IP address, language and operating system for my browser.</h4>
+    </div>
+    <div>
+      <button id="clickMeButton" type="button" class="btn btn-primary">Click Me!</button>
+      <p class="clickInfo">Click this button to see the API with your info, in JSON format!</p>
+      <h2>Example output:</h2>
+        <div class="container exemples">
+          <p><code class="highlight">{
+            "ip Address": "::1",
+            "Language": "pt-PT",
+            "Platform": "Microsoft Windows",
+            "OS": "Windows 10.0",
+            "Browser": "Chrome"
+            }</code></p>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <code>This Back End project is made for Free Code Camp certification</code>
+    <br><br>
+    &copy;João Henrique 2017|No rights reserved :)
+  </footer>
+
+  <script src="server.js"></script>
+  <!--WHEN BUTTON CLICK, SEND USER TO API URL-->
+  <script>document.getElementById("clickMeButton").onclick = function () {
+    location.href = "http://localhost:3000/api/whoami/";
+  };</script>
+
+</body>
+</html>
