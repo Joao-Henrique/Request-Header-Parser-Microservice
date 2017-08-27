@@ -3,6 +3,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
+var ip = require('ip');
 
 //TO EASILY GET THE OPERATING USER OPERATING SYSTEM VALUE
 var useragent = require('express-useragent');
@@ -25,7 +26,7 @@ var api = "/api/whoami/";
 
 //GET REQUIRED INFO ABOUT THE USER
 app.get(api, function(req, res){
-  var ipAddress = req.ip;
+  var ipAddress = ip.address();
   var language = req.acceptsLanguages();
   var software = req.useragent.platform;  
   var operatingSystem = req.useragent.os;
